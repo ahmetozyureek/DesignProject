@@ -122,7 +122,7 @@ model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accurac
 
 # Modeli eğitme
 model.fit(X_train_scaled, y_train_smote, epochs=70, batch_size=16, verbose=10, validation_data=(X_test_scaled, y_test))
-# 70 epoch boyunca modeli eğitir, her epochta doğrulama verisiyle kontrol eder terminale yazdırır
+# 70 epoch en son denediğim
 
 
 #modelin performansını değerlendiriyor
@@ -152,5 +152,6 @@ print(f"Test Accuracy: {accuracy:.4f}")  # doğruluk oranını yazdır
 #bu projeyi yazarken yararlandığım kurslar şunlar :
 # https://www.udemy.com/course/python-ve-yapay-zekaya-giris-101/?kw=yapay+zekaya+giri%C5%9F&src=sac
 # https://www.udemy.com/course/yapay-zeka/
+
 
  
